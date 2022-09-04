@@ -13,6 +13,7 @@ export default function Quiz({ navigation, route }) {
   const [options, setOptions] = useState([]);
   const [score, setScore] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  
 
   const { difficulty, category } = route.params;
  
@@ -58,6 +59,10 @@ export default function Quiz({ navigation, route }) {
     if (ques !== 9) handlePress();
     if (ques === 9) handleShowRes();
   };
+
+
+
+  
   //violeta 
 
   return (
@@ -156,6 +161,14 @@ const styles = StyleSheet.create({
     paddingHorizontral: 20,
     backgroundColor:  "#8338EC"
   },
+  progress: {
+    fontSize: 20,
+    fontWeight: '600',
+   textAlign: 'right',
+   marginRight: 20,    
+    color: 'white'
+
+  },
 
 
   top: {
@@ -174,7 +187,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   button: {
-    backgroundColor: "#586ba4",
+    backgroundColor: "transparent",
     padding: 16,
     borderRadius: 16,
     alignItems: "center",
@@ -186,7 +199,7 @@ const styles = StyleSheet.create({
     color: "white",
   },
   question: {
-    fontSize: 30,
+    fontSize: 28,
     fontWeight: "600",
     color: 'white'
   },

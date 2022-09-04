@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#8338EC",
   },
   containerButtons: {
-    marginTop: 40,
+    marginTop: '30%',
     justifyContent: 'center',
     alignItems: 'center',
 
@@ -59,7 +59,8 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 24,
-    fontWeight: '900'
+    fontWeight: '900',
+    fontFamily: 'Mogra'
   },
 
   top: {

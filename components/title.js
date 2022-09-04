@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Mogra'
   },
   container: {
-    paddingVertical: 16,
+
     justifyContent: "center",
     alignItems: "center",
   },

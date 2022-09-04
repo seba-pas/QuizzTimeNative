@@ -4,8 +4,14 @@ import Title from "../components/title";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
+import { useFonts } from "expo-font";
 
 export default function Category({ navigation }) {
+
+    const [fontsLoaded] = useFonts({
+        'Mogra': require("../assets/Mogra-Regular.ttf"),
+      });
+
   function handlePress(num) {
     navigation.navigate("Difficulty", {
       category: num,
@@ -92,6 +98,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     color: "white",
     alignContent: "center",
+    
   },
   top: {
     marginTop: 30,

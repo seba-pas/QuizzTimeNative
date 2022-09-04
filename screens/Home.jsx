@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
+import { StyleSheet, StatusBar, Text, View, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import Title from "../components/title";
 import triviaNight from "../assets/trivianight.png";
@@ -6,6 +6,11 @@ import triviaNight from "../assets/trivianight.png";
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
+       <StatusBar
+        animated={true}
+       backgroundColor='#8338EC'
+       style={styles.statusBar}
+      />
       <View style={styles.fondo}>
         {/* <Title word={"Quizzmo"} /> */}
         <View style={styles.bannerContainer}>
@@ -44,6 +49,12 @@ const styles = StyleSheet.create({
     height: "100%",
     paddingTop: 40,
     paddingHorizontral: 20,
+    backgroundColor: "#8338EC",
+
+  },
+  statusBar: {
+    color:'white'
+
   },
   fondo: {
     height: "100%",
@@ -74,7 +85,7 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 28,
     fontWeight: "900",
-    color: "#8338EC",
+    color: "white",
   },
   buttonContainer: {
     felx: 1,
