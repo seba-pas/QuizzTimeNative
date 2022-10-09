@@ -1,6 +1,6 @@
 {
   "build": {
-    "moviesquizz": {
+    "preview": {
       "android": {
         "buildType": "apk"
       }
